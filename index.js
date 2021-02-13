@@ -12,8 +12,8 @@ function iterate(callback) {
   return arr;
 }
 
-function addTen(arr) {
-  arr.forEach(e => e + 10);
+function addTen(el, index, arr) {
+  arr[index] = el + 10;
 }
 
 function doToArray(arr, callback) {
