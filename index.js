@@ -1,17 +1,24 @@
 let array = [1,2,3,4,5,6];
 
-function iterativeLog(array) {
-  array.forEach((element, index)=> {
+function iterativeLog(arr) {
+  arr.forEach((element, index)=> {
     console.log(`${index}: ${element}`);
   });
 }
 
 function iterate(callback) {
-
+  let arr = [10, 20, 30];
+  arr.forEach(callback);
+  return arr;
 }
 
-function doToArray(array, callback) {
-
+function addTen(arr) {
+  arr.forEach(e => e + 10);
 }
 
-iterativeLog();
+function doToArray(arr, callback) {
+  arr.forEach(el => callback);
+}
+
+doToArray(array, addTen);
+console.log(array);
