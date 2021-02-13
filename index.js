@@ -5,11 +5,11 @@ function iterativeLog(array) {
 }
 
 function iterate(callback) {
-  
+
 }
 
 function doToArray(array, callback) {
-  
+
 }
 
 iterativeLog([1,2,3,4,5,6]);
